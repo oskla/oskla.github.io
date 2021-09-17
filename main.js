@@ -5,7 +5,7 @@ let list1 = document.getElementById("list1");
 let knappen = document.getElementById("btn1");
 
 
-//bildBoxParent.innerHTML =+ "<div id="+"bild"+i+">"+"hejhej"+"</div>"
+///bildBoxParent.innerHTML =+ "<div id="+"bild"+i+">"+"hejhej"+"</div>"
 
 //function loop() {
 //    for (let i = 0; i < 5; i++) {
