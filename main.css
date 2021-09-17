@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'lato' sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap") format("woff");
+}
 
 body {
 font-family:'Lato', sans-serif !important;
@@ -21,9 +27,10 @@ main {
 nav {
     
     font-family:'Lato', sans-serif !important;
+    font-size: 1.5em;
     height:auto;
     Margin:auto;
-    padding:10px 20px 10px 20px;
+    padding:1px 20px 1px 20px;
     Text-align: center; 
     
 }
