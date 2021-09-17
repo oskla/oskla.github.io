@@ -3,6 +3,7 @@
 //definierar variabler
 let list1 = document.getElementById("list1");
 let knappen = document.getElementById("btn1");
+let clearAll = document.getElementById("clear-all")
 
 
 ///bildBoxParent.innerHTML =+ "<div id="+"bild"+i+">"+"hejhej"+"</div>"
@@ -32,10 +33,11 @@ let pushBtn = knappen.addEventListener("click", function() {
 let ClearAll = document.getElementById("clear-all");
 
 
-   
+function refreshPage(){
+    window.location.reload();
+} 
 
-
-
+clearAll.addEventListener("click",refreshPage);
 
 
 

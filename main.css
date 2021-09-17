@@ -1,20 +1,77 @@
 
 body {
-background: url(bg.jpg);
-background-repeat: no-repeat;
-background-size: 100%;
+
+padding:0px;
+margin:0px;
 
 }
 /* centrera knappen */
 header {
+    
     width:100%;
+    background-color: #BA2C73;
+    
 }
 
-/* styling btn1 */
+
+main {
+  /*  border-style: solid; */
+    width:100%;
+}
+nav {
+    font-family:'Lato', sans-serif;
+    height:auto;
+    Margin:auto;
+    padding:20px;
+    Text-align: center; 
+    
+}
+
+
+/* list in navbar */
+nav ul {
+    color: whitesmoke;
+    padding:0px;
+    
+    
+}
+
+nav ul li {
+    display: inline;
+    padding:3vh;
+    color:whitesmoke;
+}
+
+
+
+#div1 {
+    background-color: #6D3B47;
+    
+    width: 100%;
+    display:block;
+}
+
+/* styling på länkar */
+a:link {
+    color:whitesmoke;
+    text-decoration: none;
+}
+a:visited {
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #D85A99;
+}
+
+/* button that generates buttons */
 #btn1 {
-    background-color: rgb(255, 255, 255);
-    color:rgb(65, 65, 65);
+    background-color: #C6959D;
+    color:#351D21;
     padding:30px;
+    margin-top:10vh;
+    margin-bottom:10vh;
     border-radius: 20px;
     border-width: 0px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -23,9 +80,26 @@ header {
     justify-content: center;
     width:auto;
 }
-/* Generell styling alla knappar (förutom btn1) */
+
+/* button that clears all */
+#clear-all {
+    background-color: #2D3047;
+    color:rgb(65, 65, 65);
+    padding:30px;
+    margin-top:10vh;
+    margin-bottom:10vh;
+    border-radius: 20px;
+    border-width: 0px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:normal;
+    font-size: 2em;
+    justify-content: center;
+    width:auto;
+}
+
+/* Generell styling alla knappar (förutom btn1 & clear-all) */
 button {
-    background-color:dodgerblue;
+    background-color:#A5AECA;
     color:white;
     padding:20px;
     border-radius: 10px;
@@ -34,6 +108,7 @@ button {
     font-weight: bold;
     font-size:20px;
     width:150px;
+    margin:1vh;
 }
 
 #btn1:hover {
@@ -49,36 +124,50 @@ button:hover {
   }
   
 #div1 {
-    
-    border-style: solid; 
-    float: none;
+    background-image: url(stars.jpg);
+    background-size: cover;
+    /* border-style: solid; */ 
     width:100%;
     text-align: center;
-    
+    padding-top:15vh;
+    padding-bottom:15vh;
 }
 
-#bild-box-parent {
+#btn-container {
+    background-color:#453A49;
+  
+    /* border-style: solid; */
     
-    border-style: solid; 
-}
-
-#btnContainer {
-    border-style: solid;
     width:100%;
+    margin:0px;
+    
+}
+
+#btn-container ul {
+    padding:10vh;
+    margin:0px;
+    text-align: center;
+}
+
+#clear-all-container {
+    background-color: #282F44;
+    /* border-style: solid; */
+    background: url(mountain.jpg);
+    background-size: cover;
+    width:100%;
+    height:auto;
     float:none;
     text-align: center;
 }
 
 #clear-all {
-    
+    background-color: #ED217C;
     width:auto;
-
+    color:whitesmoke;
+    margin-bottom: 100vh;
 }
 
-ul {
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: bold;
-    list-style-type: none;
-    padding:0%;
+#clear-all:hover {
+    background-color: violet;
 }
+
