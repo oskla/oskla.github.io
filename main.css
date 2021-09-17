@@ -19,10 +19,11 @@ main {
     width:100%;
 }
 nav {
+    
     font-family:'Lato', sans-serif;
     height:auto;
     Margin:auto;
-    padding:20px;
+    padding:10px 20px 10px 20px;
     Text-align: center; 
     
 }
@@ -124,7 +125,7 @@ button:hover {
   }
   
 #div1 {
-    background-image: url(stars.jpg);
+    background: url(mountain.jpg);
     background-size: cover;
     /* border-style: solid; */ 
     width:100%;
@@ -152,7 +153,7 @@ button:hover {
 #clear-all-container {
     background-color: #282F44;
     /* border-style: solid; */
-    background: url(mountain.jpg);
+    
     background-size: cover;
     width:100%;
     height:auto;
