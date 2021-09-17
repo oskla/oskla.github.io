@@ -75,7 +75,7 @@ a:hover{
     margin-bottom:10vh;
     border-radius: 20px;
     border-width: 0px;
-    font-family:'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight:normal;
     font-size: 2em;
     justify-content: center;
@@ -105,7 +105,7 @@ button {
     padding:20px;
     border-radius: 10px;
     border-width: 0px;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: bold;
     font-size:20px;
     width:150px;
