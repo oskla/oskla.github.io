@@ -185,3 +185,21 @@ button:hover {
         font-weight: 400;
         src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap") format("woff");
     }
+
+    /* PORTFOLIO.HTML */
+
+
+.videos {
+    width:400px;
+    padding: 2vh;
+}   
+
+#div-videos{
+
+}
+#video-container {
+    display: flex;
+    text-align: center;
+   justify-content: center;
+    
+}
