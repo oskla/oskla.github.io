@@ -194,12 +194,29 @@ button:hover {
     padding: 2vh;
 }   
 
-#div-videos{
-
-}
 #video-container {
     display: flex;
     text-align: center;
    justify-content: center;
-    
+   margin-top: 10vh;
+}
+
+#video-header {
+    background-color: rgba(48, 48, 48, 0);
+    color:seashell;
+    font-size: 5em;
+}
+#sub-header-video {
+    font-size: 17px;
+    color: rgb(63, 63, 63);
+}
+
+/* CONTACT.HTML */
+
+#contact-info {
+    background-color: rgba(48, 48, 48, 0);
+    color:seashell;
+    font-size: 5em;
+    width:100%;
+    margin-bottom:60vh;
 }
