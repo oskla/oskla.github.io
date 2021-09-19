@@ -1,36 +1,64 @@
 
 //definierar variabler
-let list1 = document.getElementById("list1");
+let btnList = document.getElementById("list1");
 let knappen = document.getElementById("btn1");
 let clearAll = document.getElementById("clear-all")
 
 
-
-// vad ska hända när jag trycker på Btn1
+// vad ska hända när man trycker på btn1 
 let pushBtn = knappen.addEventListener("click", function() {
     
     for (let i = 1; i < 5; i++) {
+       
+        var newButtons = document.createElement("button");
+        btnList.appendChild(newButtons);                //Var ska knapparna lägga sig
+
+        newButtons.setAttribute("class","newButtons");  //ge de nya knapparna en klass
+        newButtons.setAttribute("id","button"+i);       //ge de nya knapparna ett unikt id
+        newButtons.innerHTML =+ i;                      //vad ska stå i knappen
+
         
-      
-        list1.innerHTML += "<button>"+i+"</button>"
-     }
+        var count = btnList.childElementCount;          //räkna hur många knappar som skapats
+        console.log(count);
+        
+        
+        }
+        //om det är fler än 8 knappar, skicka ut ett meddelande
+        if (count > 8) {                    
+            console.log("Nu äre många knappar")
+            alert("Nu får du sluta leka")
+            
+          
+        //rensa även de existerande knapparna
+        function clearAllButtons(){
+            while (btnList.lastElementChild) {                  //kör loopen så länge det finns ett sista element i listan(?). Alltså tills det är tomt
+                btnList.removeChild(btnList.lastElementChild);  //ta bort det sista elementet
+            }     
+         }
+         clearAllButtons();
+        }
+        
+       
 });
 
 
 //definierar ClearAll-knappen
-let ClearAll = document.getElementById("clear-all");
+var ClearAll = document.getElementById("clear-all");
 
 
-//definera funktionen refreshPage - ladda om sidan + scrolla till toppen
-function refreshPage(){
-    window.location.reload();
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
- 
-} 
+function clearAllButtons(){
+    while (btnList.lastElementChild) {
+        btnList.removeChild(btnList.lastElementChild);
+    }     
+ }
+
 
 //utför ClearAll-funktionen
-clearAll.addEventListener("click",refreshPage);
+clearAll.addEventListener("click",clearAllButtons);
+
+
+
+    
 
 
 

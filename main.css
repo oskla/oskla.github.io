@@ -106,7 +106,7 @@ a:hover{
 }
 
 /* Generell styling alla knappar (förutom btn1 & clear-all) */
-button {
+button, .newButtons {
     background-color:#A5AECA;
     color:white;
     padding:20px;
@@ -118,6 +118,7 @@ button {
     width:150px;
     margin:1vh;
 }
+
 
 #btn1:hover {
     background-color:rgb(48, 48, 48);
