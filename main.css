@@ -207,6 +207,13 @@ button:hover {
     color:seashell;
     font-size: 5em;
 }
+
+.mid-page-header {
+    background-color: rgba(48, 48, 48, 0);
+    color:seashell;
+    font-size: 5em;
+}
+
 #sub-header-video {
     font-size: 17px;
     color: rgb(63, 63, 63);
@@ -220,4 +227,18 @@ button:hover {
     font-size: 5em;
     width:100%;
     margin-bottom:60vh;
+}
+
+/* ABOUT */
+
+#about {
+    background-color: rgba(48, 48, 48, 0);
+    color:seashell;
+    font-size: 2em;
+    width:80%;
+    margin-bottom:60vh;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 }

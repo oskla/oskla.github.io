@@ -5,6 +5,10 @@ let knappen = document.getElementById("btn1");
 let clearAll = document.getElementById("clear-all")
 
 
+
+
+
+
 // vad ska hända när man trycker på btn1 
 let pushBtn = knappen.addEventListener("click", function() {
     
@@ -24,7 +28,7 @@ let pushBtn = knappen.addEventListener("click", function() {
         
         }
         //om det är fler än 8 knappar, skicka ut ett meddelande
-        if (count > 8) {                    
+        if (count > 8 && count < 15) {                    
             console.log("Nu äre många knappar")
             alert("Nu får du sluta leka")
             
@@ -39,17 +43,34 @@ let pushBtn = knappen.addEventListener("click", function() {
         }
         
        
+       
+            
 });
 
 
 //definierar ClearAll-knappen
 var ClearAll = document.getElementById("clear-all");
 
-
+//en clear-all knapp som med hjälp av en while-loop tar bort alla children i "btnList"
 function clearAllButtons(){
     while (btnList.lastElementChild) {
         btnList.removeChild(btnList.lastElementChild);
-    }     
+        
+    }    
+    
+
+     //try catch - försöker hämta information från variabeln "btn5" - som inte finns.
+    try {
+
+        console.log(btn5);
+        
+    } catch (error) {
+        console.log("Some error has occurd: " + error);
+        console.log(error.stack);
+    }
+    finally {
+    console.log("But no problems, everything still works as it should.")
+    }
  }
 
 
@@ -59,7 +80,5 @@ clearAll.addEventListener("click",clearAllButtons);
 
 
     
-
-
 
 
