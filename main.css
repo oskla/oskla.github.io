@@ -11,37 +11,30 @@ padding:0px;
 margin:0px;
 
 }
-/* centrera knappen */
+
 header {
-    
     width:100%;
     background-color: #BA2C73;
-
 }
 
 
 main {
-  /*  border-style: solid; */
     width:100%;
 }
+/* THE NAVBAR */
 nav {
-    
     font-family:'Lato', sans-serif;
     font-size: 1.5em;
     height:auto;
     Margin:auto;
     padding:1px 20px 1px 20px;
     Text-align: center; 
-    
 }
 
-
-/* list in navbar */
+/* LIST IN NAVBAR */
 nav ul {
     color: whitesmoke;
     padding:0px;
-    
-    
 }
 
 nav ul li {
@@ -52,14 +45,8 @@ nav ul li {
 
 
 
-#div1 {
-    background-color: #6D3B47;
-    
-    width: 100%;
-    display:block;
-}
 
-/* styling på länkar */
+/* LINK STYLING */
 a:link {
     color:whitesmoke;
     text-decoration: none;
@@ -73,7 +60,9 @@ a:hover{
     color: #D85A99;
 }
 
-/* button that generates buttons */
+
+
+/* BUTTON THAT GENERATES BUTTONS */
 #btn1 {
     background-color: #C6959D;
     color:#351D21;
@@ -89,23 +78,9 @@ a:hover{
     width:auto;
 }
 
-/* button that clears all */
-#clear-all {
-    background-color: #2D3047;
-    color:rgb(65, 65, 65);
-    padding:30px;
-    margin-top:10vh;
-    margin-bottom:10vh;
-    border-radius: 20px;
-    border-width: 0px;
-    font-family:'Lato', sans-serif;
-    font-weight:normal;
-    font-size: 2em;
-    justify-content: center;
-    width:auto;
-}
 
-/* Generell styling alla knappar (förutom btn1 & clear-all) */
+
+/* GENERAL STYLING BUTTONS  */
 button, .newButtons {
     background-color:#A5AECA;
     color:white;
@@ -119,7 +94,6 @@ button, .newButtons {
     margin:1vh;
 }
 
-
 #btn1:hover {
     background-color:rgb(48, 48, 48);
     color: ghostwhite;
@@ -132,10 +106,10 @@ button:hover {
     cursor: pointer;
   }
   
+  /* BACKGROUND DIV, MOUNTAIN */
 #div1 {
     background: url(mountain.jpg);
     background-size: cover;
-    /* border-style: solid; */ 
     width:100%;
     text-align: center;
     padding-top:15vh;
@@ -144,9 +118,6 @@ button:hover {
 
 #btn-container {
     background-color:#453A49;
-  
-    /* border-style: solid; */
-    
     width:100%;
     margin:0px;
     
@@ -158,10 +129,9 @@ button:hover {
     text-align: center;
 }
 
+
 #clear-all-container {
     background-color: #282F44;
-    /* border-style: solid; */
-    
     background-size: cover;
     width:100%;
     height:auto;
@@ -169,26 +139,31 @@ button:hover {
     text-align: center;
 }
 
+
+/* BUTTON THAT CLEARS ALL */
 #clear-all {
     background-color: #ED217C;
     width:auto;
     color:whitesmoke;
     margin-bottom: 100vh;
+    padding:30px;
+    margin-top:10vh;
+    border-radius: 20px;
+    font-size: 2em;
+    justify-content: center;
+    width:auto;
 }
 
 #clear-all:hover {
     background-color: violet;
 }
 
-@font-face {
-        font-family: 'lato' sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        src: url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap") format("woff");
-    }
 
-    /* PORTFOLIO.HTML */
 
+
+
+
+/* PORTFOLIO.HTML */
 
 .videos {
     width:400px;
@@ -232,12 +207,15 @@ button:hover {
 /* ABOUT */
 
 #about {
-    background-color: rgba(48, 48, 48, 0);
+    background-color: rgba(48, 48, 48, 0.386);
     color:seashell;
     font-size: 2em;
     width:80%;
+    margin-top: 20vh;
     margin-bottom:60vh;
     margin-left: auto;
     margin-right: auto;
+    padding:2vh;
+    border-radius: 10px;
     
 }
