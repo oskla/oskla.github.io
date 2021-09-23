@@ -6,27 +6,26 @@ let clearAll = document.getElementById("clear-all")
 
 
 
-
-
-
 // vad ska hända när man trycker på btn1 
 let pushBtn = knappen.addEventListener("click", function() {
     
     for (let i = 1; i < 5; i++) {
        
-        var newButtons = document.createElement("button");
+        
+        var newButtons = document.createElement("button"); // skapa knapp
         btnList.appendChild(newButtons);                //Var ska knapparna lägga sig
 
         newButtons.setAttribute("class","newButtons");  //ge de nya knapparna en klass
         newButtons.setAttribute("id","button"+i);       //ge de nya knapparna ett unikt id
-        newButtons.innerHTML =+ i;                      //vad ska stå i knappen
-
-        
+       
         var count = btnList.childElementCount;          //räkna hur många knappar som skapats
+        newButtons.innerHTML = count;                   //vad ska stå i knappen
+
+        //skriv ut i loggen hur många knappar som skapats
         console.log(count);
         
-        
         }
+        
         //om det är fler än 8 knappar, skicka ut ett meddelande
         if (count > 8 && count < 15) {                    
             console.log("Nu äre många knappar")
