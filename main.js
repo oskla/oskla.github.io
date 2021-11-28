@@ -12,16 +12,15 @@ let pushBtn = knappen.addEventListener("click", function() {
     for (let i = 1; i < 5; i++) {
        
         
-        var newButtons = document.createElement("button"); // skapa knapp
-        btnList.appendChild(newButtons);                //Var ska knapparna lägga sig
+        var newButtons = document.createElement("button");  // skapa knapp
+        btnList.appendChild(newButtons);                    //Var ska knapparna lägga sig
 
         
-       
-        var count = btnList.childElementCount;          //räkna hur många knappar som skapats
-        newButtons.setAttribute("class","newButtons");  //ge de nya knapparna en klass
-        newButtons.setAttribute("id","button"+count);   //ge de nya knapparna ett unikt id
+        var count = btnList.childElementCount;              //räkna hur många knappar som skapats
+        newButtons.setAttribute("class","newButtons");      //ge de nya knapparna en klass
+        newButtons.setAttribute("id","button"+count);       //ge de nya knapparna ett unikt id
         newButtons.value = count;
-        newButtons.innerHTML = count;                   //vad ska stå i knappen
+        newButtons.innerHTML = count;                       //vad ska stå i knappen
 
         //skriv ut i loggen hur många knappar som skapats
         console.log(count);
@@ -76,6 +75,8 @@ clearAll.addEventListener("click",clearAllButtons);
 
 
 
-    
+    function hej(yo){
+
+    }
 
 
